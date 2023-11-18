@@ -2,9 +2,17 @@ package useless.dfexample;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.block.material.Material;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.BlockBuilder;
+import turniplabs.halplibe.helper.EntityHelper;
+import useless.dfexample.entity.EntityTest;
+import useless.dfexample.entity.EntityTestModel;
+import useless.dfexample.entity.RenderTest;
+import useless.dragonfly.block.BlockModel;
+import useless.dragonfly.helper.ModelHelper;
+import useless.dragonfly.model.block.BlockModelDragonFly;
 
 
 public class DFExampleMod implements ModInitializer {
@@ -42,5 +50,7 @@ public class DFExampleMod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("DFExampleMod initialized.");
+		//TEST Entity
+		EntityHelper.createEntity(EntityTest.class, new RenderTest(ModelHelper.getOrCreateEntityModel(MOD_ID, "entity/test.json", EntityTestModel.class), 0.5F), 2000, "test");
     }
 }
