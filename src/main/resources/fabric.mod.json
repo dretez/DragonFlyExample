@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "dfexample",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Dragon Fly Example Mod",
   "description": "This mod aims to help new BTA modders.",
   "authors": [
     "Useless"
@@ -18,11 +18,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-        "useless.examplemod.ExampleMod"
+        "useless.dfexample.DFExampleMod"
     ]
   },
   "mixins": [
-      "examplemod.mixins.json"
+      "dfexample.mixins.json"
   ],
 
   "depends": {
