@@ -3,9 +3,9 @@
         "particle": "minecraft:block/glass",
         "glass": "minecraft:block/glass",
         "obsidian": "minecraft:block/obsidian",
-        "beacon_top": "minecraft:block/block_diamond_top",
-        "beacon_side": "minecraft:block/block_diamond_side",
-        "beacon_bottom": "minecraft:block/block_diamond_bottom"
+        "beacon_top": "dfexample:block/beacon",
+        "beacon_side": "dfexample:block/beacon",
+        "beacon_bottom": "dfexample:block/beacon"
     },
     "elements": [
         {   "__comment": "Glass shell",

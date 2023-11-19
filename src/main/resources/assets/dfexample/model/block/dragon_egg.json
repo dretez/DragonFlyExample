@@ -1,7 +1,7 @@
 {   "parent": "block/block",
     "textures": {
-        "particle": "block/dragon_egg",
-        "all": "block/dragon_egg"
+        "particle": "dfexample:block/dragon_egg",
+        "all": "dfexample:block/dragon_egg"
     },
     "elements": [
         {   "from": [ 6, 15, 6 ],
