@@ -4,7 +4,7 @@
 		"0": "minecraft:block/stool_side",
 		"1": "minecraft:block/stool_top",
 		"2": "minecraft:block/planks_oak",
-		"particle": "stool_side"
+		"particle": "block/stool_side"
 	},
 	"elements": [
 		{

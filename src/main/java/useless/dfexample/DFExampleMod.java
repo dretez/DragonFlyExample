@@ -1,6 +1,7 @@
 package useless.dfexample;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.client.render.block.color.BlockColorWater;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import org.slf4j.Logger;
@@ -20,32 +21,29 @@ public class DFExampleMod implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static final Block testBlock = new BlockBuilder(MOD_ID)
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/TestBlock.json")))
-		.setTextures(3,1)
 		.build(new BlockModel("testblock", 1000, Material.dirt, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/TestBlock.json")));
 	public static final Block testBlock2 = new BlockBuilder(MOD_ID)
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/TestBlock2.json")))
-		.setTextures(13,13)
 		.build(new BlockModel("testblock2", 1001, Material.dirt, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/TestBlock2.json")));
 	public static final Block testBlock3 = new BlockBuilder(MOD_ID)
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/TestBlock3.json")))
-		.setTextures(4,0)
 		.build(new BlockModel("testblock3", 1002, Material.dirt, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/TestBlock3.json")));
 	public static final Block modernDragonEgg = new BlockBuilder(MOD_ID)
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/dragon_egg.json")))
-		.setTextures(5,2)
 		.build(new BlockModel("exampleDragon", 1003, Material.dirt, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/dragon_egg.json")));
 	public static final Block modernBeacon = new BlockBuilder(MOD_ID)
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/beacon.json")))
-		.setTextures(1,3)
 		.build(new BlockModel("exampleBeacon", 1004, Material.dirt, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/beacon.json")));
 	public static final Block sideTest = new BlockBuilder(MOD_ID)
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/directionPyramid.json")))
-		.setTextures(1,3)
 		.build(new BlockModel("exampleSides", 1005, Material.dirt, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/directionPyramid.json")));
 	public static final Block btaStool = new BlockBuilder(MOD_ID)
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/stool.json")))
-		.setTextures(1,3)
 		.build(new BlockModel("exampleStool", 1006, Material.dirt, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/stool.json")));
+	public static final Block cauldron = new BlockBuilder(MOD_ID)
+		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/water_cauldron_full.json")))
+		.setBlockColor(new BlockColorWater())
+		.build(new BlockModel("exampleCauldron", 1007, Material.metal, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/water_cauldron_full.json")));
     @Override
     public void onInitialize() {
         LOGGER.info("DFExampleMod initialized.");
