@@ -3,6 +3,7 @@ package useless.dfexample;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.client.render.block.color.BlockColorWater;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.block.BlockStairs;
 import net.minecraft.core.block.material.Material;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,6 +45,10 @@ public class DFExampleMod implements ModInitializer {
 		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/water_cauldron_full.json")))
 		.setBlockColor(new BlockColorWater())
 		.build(new BlockModel("exampleCauldron", 1007, Material.metal, ModelHelper.getOrCreateBlockModel(MOD_ID, "block/water_cauldron_full.json")));
+	public static final Block stairs = new BlockBuilder(MOD_ID)
+		.setBlockModel(new BlockModelDragonFly(ModelHelper.getOrCreateBlockModel(MOD_ID, "block/stairs.json"),
+			ModelHelper.getOrCreateBlockState(MOD_ID, "test_stairs.json"), new StairsMetaStateInterpreter(), true, 0.25f))
+		.build(new BlockStairs(Block.dirt,1008)).withLitInteriorSurface(true);
     @Override
     public void onInitialize() {
         LOGGER.info("DFExampleMod initialized.");
