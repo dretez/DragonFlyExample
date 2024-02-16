@@ -1,4 +1,4 @@
-{   "parent": "block/block",
+{   "parent": "dfexample:block/block",
     "textures": {
       "particle": "#side",
       "bottom": "dfexample:block/cut_copper",

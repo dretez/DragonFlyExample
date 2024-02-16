@@ -1,4 +1,4 @@
-{   "parent": "block/block",
+{   "parent": "dfexample:block/block",
     "textures": {
         "particle": "minecraft:block/glass",
         "glass": "minecraft:block/glass",

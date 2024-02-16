@@ -1,0 +1,6 @@
+{
+  "parent": "dfexample:block/fence_side",
+  "textures": {
+    "texture": "dfexample:block/birch_planks"
+  }
+}
