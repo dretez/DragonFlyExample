@@ -1,11 +1,11 @@
 package useless.dfexample.testentity.Zombie;
 
 import net.minecraft.core.util.helper.MathHelper;
-import useless.dragonfly.helper.AnimationHelper;
-import useless.dragonfly.model.entity.BenchEntityModel;
-import useless.dragonfly.model.entity.animation.Animation;
+import org.useless.dragonfly.helper.AnimationHelper;
+import org.useless.dragonfly.model.entity.BenchEntityModel;
+import org.useless.dragonfly.model.entity.animation.Animation;
 
-import static useless.dragonfly.DragonFly.MOD_ID;
+import static useless.dfexample.DFExampleMod.MOD_ID;
 
 public class ZombieModelTest extends BenchEntityModel {
 	@Override

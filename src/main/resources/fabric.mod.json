@@ -19,10 +19,7 @@
   "entrypoints": {
     "beforeGameStart": [
         "useless.dfexample.DFExampleMod"
-    ],
-		"beforeClientStart": [
-			"useless.dfexample.DFExampleMod"
-		]
+    ]
   },
   "mixins": [
       "dfexample.mixins.json"

@@ -8,11 +8,11 @@ public class EntityTest extends EntityHuman {
 		super(world);
 	}
 	public String getEntityTexture() {
-		return "/assets/dfexample/entity/zombie_test.png";
+		return "/assets/dfexample/textures/entity/zombie_test.png";
 	}
 
 	public String getDefaultEntityTexture() {
-		return "/assets/dfexample/entity/zombie_test.png";
+		return "/assets/dfexample/textures/entity/zombie_test.png";
 	}
 
 }

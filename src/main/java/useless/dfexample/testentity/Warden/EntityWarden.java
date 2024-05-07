@@ -3,7 +3,7 @@ package useless.dfexample.testentity.Warden;
 import net.minecraft.core.entity.Entity;
 import net.minecraft.core.entity.monster.EntityHuman;
 import net.minecraft.core.world.World;
-import useless.dragonfly.model.entity.AnimationState;
+import org.useless.dragonfly.model.entity.AnimationState;
 
 public class EntityWarden extends EntityHuman {
 	public AnimationState emergeState = new AnimationState();
@@ -40,11 +40,11 @@ public class EntityWarden extends EntityHuman {
 
 	@Override
 	public String getEntityTexture() {
-		return "/assets/dfexample/entity/warden.png";
+		return "/assets/dfexample/textures/entity/warden.png";
 	}
 
 	@Override
 	public String getDefaultEntityTexture() {
-		return "/assets/dfexample/entity/warden.png";
+		return "/assets/dfexample/textures/entity/warden.png";
 	}
 }

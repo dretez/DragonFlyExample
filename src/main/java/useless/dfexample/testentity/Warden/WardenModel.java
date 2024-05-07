@@ -2,9 +2,9 @@ package useless.dfexample.testentity.Warden;
 
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.util.helper.MathHelper;
-import useless.dragonfly.helper.AnimationHelper;
-import useless.dragonfly.model.entity.BenchEntityModel;
-import useless.dragonfly.model.entity.animation.Animation;
+import org.useless.dragonfly.helper.AnimationHelper;
+import org.useless.dragonfly.model.entity.BenchEntityModel;
+import org.useless.dragonfly.model.entity.animation.Animation;
 
 import static useless.dfexample.DFExampleMod.MOD_ID;
 

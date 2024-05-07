@@ -1,4 +1,4 @@
-package useless.dragonfly.debug.item;
+package useless.dfexample.item;
 
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.item.Item;

@@ -1,6 +1,6 @@
 package useless.dfexample.testentity.HTest;
 
-import useless.dragonfly.model.entity.BenchEntityModel;
+import org.useless.dragonfly.model.entity.BenchEntityModel;
 
 public class HModelTest extends BenchEntityModel {
 	@Override
