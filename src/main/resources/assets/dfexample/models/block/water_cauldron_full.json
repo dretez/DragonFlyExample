@@ -2,7 +2,7 @@
   "parent": "dfexample:block/template_cauldron_full",
   "textures": {
     "bottom": "dfexample:block/cauldron_bottom",
-    "content": "minecraft:block/water0",
+    "content": "minecraft:block/water_still",
     "inside": "dfexample:block/cauldron_inner",
     "particle": "dfexample:block/cauldron_side",
     "side": "dfexample:block/cauldron_side",

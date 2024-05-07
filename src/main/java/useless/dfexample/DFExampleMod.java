@@ -33,19 +33,19 @@ public class DFExampleMod implements GameStartEntrypoint {
 	public static final Block testBlock = new BlockBuilder(MOD_ID)
 		.setBlockModel(
 			block -> new DFBlockModelBuilder(MOD_ID)
-				.setBlockModel("block/TestBlock.json")
+				.setBlockModel("block/testblock.json")
 				.build(block))
 		.build(new ExampleBlockModel("testblock", 2000, Material.dirt));
 	public static final Block testBlock2 = new BlockBuilder(MOD_ID)
 		.setBlockModel(
 			block -> new DFBlockModelBuilder(MOD_ID)
-				.setBlockModel("block/TestBlock2.json")
+				.setBlockModel("block/testblock2.json")
 				.build(block))
 		.build(new ExampleBlockModel("testblock2", 2001, Material.dirt));
 	public static final Block testBlock3 = new BlockBuilder(MOD_ID)
 		.setBlockModel(
 			block -> new DFBlockModelBuilder(MOD_ID)
-				.setBlockModel("block/TestBlock3.json")
+				.setBlockModel("block/testblock3.json")
 				.build(block))
 		.build(new ExampleBlockModel("testblock3", 2002, Material.dirt));
 	public static final Block modernDragonEgg = new BlockBuilder(MOD_ID)
@@ -63,7 +63,7 @@ public class DFExampleMod implements GameStartEntrypoint {
 	public static final Block sideTest = new BlockBuilder(MOD_ID)
 		.setBlockModel(
 			block -> new DFBlockModelBuilder(MOD_ID)
-				.setBlockModel("block/directionPyramid.json")
+				.setBlockModel("block/direction_pyramid.json")
 				.build(block))
 		.build(new ExampleBlockModel("exampleSides", 2005, Material.dirt));
 	public static final Block btaStool = new BlockBuilder(MOD_ID)
@@ -77,7 +77,7 @@ public class DFExampleMod implements GameStartEntrypoint {
 			block -> new DFBlockModelBuilder(MOD_ID)
 				.setBlockModel("block/water_cauldron_full.json")
 				.build(block))
-		.setBlockColor(new BlockColorCustom(Colorizers.water))
+		.setBlockColor((b) -> new BlockColorCustom(Colorizers.water))
 		.build(new ExampleBlockModel("exampleCauldron", 2007, Material.metal));
 	public static final Block stairs = new BlockBuilder(MOD_ID)
 		.setBlockModel(
